@@ -7,61 +7,6 @@ interface CurrentWeather {
   windspeed: number
 }
 
-interface DailyUnits {
-  apparent_temperature_max_best_match: string
-  apparent_temperature_max_gfs_global: string
-  apparent_temperature_max_icon_seamless: string
-  apparent_temperature_max_meteofrance_arome_france_hd: string
-  apparent_temperature_min_best_match: string
-  apparent_temperature_min_gfs_global: string
-  apparent_temperature_min_icon_seamless: string
-  apparent_temperature_min_meteofrance_arome_france_hd: string
-  precipitation_hours_best_match: string
-  precipitation_hours_ecmwf_ifs04: string
-  precipitation_hours_gfs_global: string
-  precipitation_hours_icon_seamless: string
-  precipitation_hours_meteofrance_arome_france_hd: string
-  precipitation_probability_max_best_match: string
-  precipitation_probability_max_gfs_global: string
-  precipitation_sum_best_match: string
-  precipitation_sum_ecmwf_ifs04: string
-  precipitation_sum_gfs_global: string
-  precipitation_sum_icon_seamless: string
-  precipitation_sum_meteofrance_arome_france_hd: string
-  rain_sum_best_match: string
-  rain_sum_gfs_global: string
-  rain_sum_icon_seamless: string
-  shortwave_radiation_sum_best_match: string
-  shortwave_radiation_sum_gfs_global: string
-  shortwave_radiation_sum_icon_seamless: string
-  shortwave_radiation_sum_meteofrance_arome_france_hd: string
-  showers_sum_best_match: string
-  showers_sum_gfs_global: string
-  showers_sum_icon_seamless: string
-  sunrise: string
-  sunset: string
-  temperature_2m_max_best_match: string
-  temperature_2m_max_ecmwf_ifs04: string
-  temperature_2m_max_gfs_global: string
-  temperature_2m_max_icon_seamless: string
-  temperature_2m_max_meteofrance_arome_france_hd: string
-  temperature_2m_min_best_match: string
-  temperature_2m_min_ecmwf_ifs04: string
-  temperature_2m_min_gfs_global: string
-  temperature_2m_min_icon_seamless: string
-  temperature_2m_min_meteofrance_arome_france_hd: string
-  time: string
-  uv_index_clear_sky_max_best_match: string
-  uv_index_clear_sky_max_gfs_global: string
-  uv_index_max_best_match: string
-  uv_index_max_gfs_global: string
-  winddirection_10m_dominant_best_match: string
-  winddirection_10m_dominant_ecmwf_ifs04: string
-  winddirection_10m_dominant_gfs_global: string
-  winddirection_10m_dominant_icon_seamless: string
-  winddirection_10m_dominant_meteofrance_arome_france_hd: string
-}
-
 interface Daily {
   apparent_temperature_max_best_match: [number]
   apparent_temperature_max_gfs_global: [number]
@@ -82,7 +27,7 @@ interface Daily {
   precipitation_sum_ecmwf_ifs04: [number]
   precipitation_sum_gfs_global: [number]
   precipitation_sum_icon_seamless: [number]
-  precipitation_sum_meteofrance_arome_france_hd: [JSON]
+  precipitation_sum_meteofrance_arome_france_hd: [string]
   rain_sum_best_match: [number]
   rain_sum_gfs_global: [number]
   rain_sum_icon_seamless: [number]
@@ -105,7 +50,7 @@ interface Daily {
   temperature_2m_min_gfs_global: [number]
   temperature_2m_min_icon_seamless: [number]
   temperature_2m_min_meteofrance_arome_france_hd: [number]
-  time: [Date]
+  time: [string]
   uv_index_clear_sky_max_best_match: [number]
   uv_index_clear_sky_max_gfs_global: [number]
   uv_index_max_best_match: [number]
@@ -116,7 +61,6 @@ interface Daily {
   winddirection_10m_dominant_icon_seamless: [number]
   winddirection_10m_dominant_meteofrance_arome_france_hd: [number]
 }
-
 interface DailyUnits {
   apparent_temperature_max_best_match: string
   apparent_temperature_max_gfs_global: string
@@ -171,7 +115,6 @@ interface DailyUnits {
   winddirection_10m_dominant_icon_seamless: string
   winddirection_10m_dominant_meteofrance_arome_france_hd: string
 }
-
 interface Hourly {
   apparent_temperature_best_match: [number]
   apparent_temperature_gfs_global: [number]
@@ -181,7 +124,7 @@ interface Hourly {
   cloudcover_ecmwf_ifs04: [number]
   cloudcover_gfs_global: [number]
   cloudcover_icon_seamless: [number]
-  cloudcover_meteofrance_arome_france_hd: [JSON]
+  cloudcover_meteofrance_arome_france_hd: [string]
   freezinglevel_height_best_match: [number]
   freezinglevel_height_gfs_global: [number]
   freezinglevel_height_icon_seamless: [number]

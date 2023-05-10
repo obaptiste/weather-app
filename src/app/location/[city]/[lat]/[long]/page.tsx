@@ -1,7 +1,7 @@
 import React from 'react'
 import { getClient } from '../../../../../../apollo.client';
 import fetchWeatherQuery from '../../../../../../graphql/queries/fetchWeatherQueries';
-import CalloutCard from '@/app/components/CallOutCard';
+import CalloutCard from '@/app/components/CalloutCard';
 import StatCard from '@/app/components/StatCard';
 
 type Props = {
